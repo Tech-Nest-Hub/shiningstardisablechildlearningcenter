@@ -19,17 +19,17 @@ export default function Footer() {
             <h4 className="font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#" className="text-white/80 hover:text-white transition">
+                <a href="/about" className="text-white/80 hover:text-white transition">
                   About Us
                 </a>
               </li>
               <li>
-                <a href="#news" className="text-white/80 hover:text-white transition">
+                <a href="/updates" className="text-white/80 hover:text-white transition">
                   News
                 </a>
               </li>
               <li>
-                <a href="#gallery" className="text-white/80 hover:text-white transition">
+                <a href="/gallery" className="text-white/80 hover:text-white transition">
                   Gallery
                 </a>
               </li>
@@ -73,19 +73,19 @@ export default function Footer() {
             <h4 className="font-semibold mb-4">Contact Info</h4>
             <div className="space-y-3 text-sm">
               <div className="flex gap-2 items-start">
-                <MapPin size={16} className="mt-0.5 flex-shrink-0" />
+                <MapPin size={16} className="mt-0.5 shrink-0" />
                 <p className="text-white/80">Kathmandu, Nepal</p>
               </div>
               <div className="flex gap-2 items-center">
                 <Phone size={16} />
-                <p className="text-white/80">(977) XXX-XXXX</p>
+                <a href="tel:9849840305" className="text-white/80">(977) 9849840305</a>
               </div>
               <div className="flex gap-2 items-center">
                 <Mail size={16} />
                 <p className="text-white/80">info@shiningstar.edu.np</p>
               </div>
               <div className="flex gap-2 items-start">
-                <Clock size={16} className="mt-0.5 flex-shrink-0" />
+                <Clock size={16} className="mt-0.5 shrink-0" />
                 <p className="text-white/80">Mon-Fri: 8AM - 5PM</p>
               </div>
             </div>
