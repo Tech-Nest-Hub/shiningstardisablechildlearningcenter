@@ -19,7 +19,7 @@ export default function GalleryPage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-primary to-primary/80 text-white py-16">
+      <section className="bg-linear-to-r from-primary to-primary/80 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-serif font-bold mb-4">Gallery</h1>
           <p className="text-lg text-white/90">Moments from Shining Star - celebrating learning and growth</p>
@@ -45,7 +45,7 @@ export default function GalleryPage() {
                     View
                   </button>
                 </div>
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
+                <div className="absolute bottom-0 left-0 right-0 bg-linear-to-t from-black/60 to-transparent p-4">
                   <p className="text-white text-sm font-medium">{item.title}</p>
                 </div>
               </div>
