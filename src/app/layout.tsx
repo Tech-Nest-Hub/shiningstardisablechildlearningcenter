@@ -16,6 +16,37 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Shining Star Disabled Child Learning Center",
   description: "A nurturing environment for children with special needs to learn and grow.",
+  keywords: ["web developer", "portfolio", "react", "nextjs", "fullstack"],
+  authors: [{ name: "Ghost Aakash", url: "https://yourwebsite.com" }],
+  icons: {
+    icon: "/shining_star_logo.svg",
+    apple: "/shining_star_logo.svg",
+  },
+  openGraph: {
+    title: "Shining Star Disabled Child Learning Center",
+    description:
+      "A nurturing environment for children with special needs to learn and grow.",
+    url: "https://yourwebsite.com",
+    siteName: "Shining Star Disabled Child Learning Center",
+    images: [
+      {
+        url: "https://yourwebsite.com/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Shining Star Disabled Child Learning Center",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Shining Star Disabled Child Learning Center",
+    description:
+      "A nurturing environment for children with special needs to learn and grow.",
+    images: ["https://yourwebsite.com/twitter-image.jpg"],
+    creator: "@yourtwitterhandle",
+  },
 };
 
 export default function RootLayout({
