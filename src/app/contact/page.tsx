@@ -37,7 +37,7 @@ export default function ContactPage() {
                     <p className="text-foreground/80">
                       Shining Star Learning Center
                       <br />
-                      Kathmandu, Nepal
+                      Koteshwor, Nepal
                     </p>
                   </div>
                 </div>
@@ -48,7 +48,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg mb-1 text-foreground">Phone</h3>
-                    <a href="tel:+977-98498403005" className="text-foreground/80">
+                    <a href="tel:98498403005" className="text-foreground/80">
                       +977-98-4984030405
                       <br />
                       +977-98XXXXXXX

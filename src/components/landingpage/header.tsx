@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { Menu, X } from "lucide-react"
+import {  Menu, X } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 
@@ -33,8 +33,8 @@ export default function Header() {
               href="#"
               className="w-6 h-6 bg-white rounded-full flex items-center justify-center text-red-600 text-xs hover:opacity-80 transition"
             >
-              f
-            </a>
+
+f            </a>
             <a
               href="#"
               className="w-6 h-6 bg-white rounded-full flex items-center justify-center text-red-600 text-xs hover:opacity-80 transition"
