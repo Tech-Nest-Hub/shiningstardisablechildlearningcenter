@@ -1,4 +1,5 @@
-
+import Footer from "@/components/landingpage/footer"
+import Header from "@/components/landingpage/header"
 
 
 export const metadata = {
@@ -9,6 +10,7 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <main className="min-h-screen bg-background">
+      <Header />
 
       {/* Hero Section */}
       <section className="bg-linear-to-r from-primary to-primary/80 text-white py-16">
@@ -102,6 +104,8 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      <Footer />
     </main>
   )
 }
