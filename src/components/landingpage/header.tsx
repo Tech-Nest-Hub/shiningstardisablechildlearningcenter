@@ -11,7 +11,7 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-white shadow-md">
       {/* Top Bar - Quick Links */}
-      <div className="bg-red-600 text-white py-2 px-4">
+      <div className="bg-primary text-white py-2 px-4">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-sm gap-4">
           <div className="flex gap-4 md:gap-8">
             <a href="#" className="hover:opacity-80 transition">
