@@ -57,10 +57,10 @@ export default function Header() {
           {/* Logo and Branding Area */}
           <Link href="/" className="flex items-center gap-4">
             <div className="flex items-center gap-2">
-                <Image src="/shining_star_logo.svg" alt="Shining Star Logo" width={32} height={32} />
+                <Image src="/shining_star_logo.svg" alt="Shining Star Logo" width={64} height={64} />
               <div>
                 <h1 className="font-serif font-bold text-lg text-primary">Shining Star</h1>
-                <p className="text-xs text-muted-foreground">Inclusive Learning Center</p>
+                <p className="text-xs text-muted-foreground">Disable Child Learning Center</p>
               </div>
             </div>
           </Link>

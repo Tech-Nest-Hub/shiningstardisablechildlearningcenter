@@ -5,7 +5,7 @@ export default function Hero() {
       <div
         className="absolute inset-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
         style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1427504494785-cdcb1a3697ba?w=1200&h=600&fit=crop')",
+          backgroundImage: "url('/background.jpg')",
         }}
       >
         <div className="absolute inset-0 bg-black/40"></div>

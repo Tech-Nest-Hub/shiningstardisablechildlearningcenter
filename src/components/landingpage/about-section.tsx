@@ -1,14 +1,17 @@
+import Image from "next/image";
+
 export default function AboutSection() {
   return (
     <section id="about" className="py-16 md:py-24 bg-white">
       <div className="max-w-6xl mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Image placeholder */}
-          <div className="aspect-square bg-primary/10 rounded-2xl flex items-center justify-center overflow-hidden">
-            <img
-              src="/inclusive-learning-classroom-children-with-disabil.jpg"
+          <div className="aspect-square rounded-2xl flex items-center justify-center overflow-hidden">
+            <Image
+              src="/aboutusbg.jpg"
               alt="Classroom learning environment"
-              className="w-full h-full object-cover"
+              width={500}
+              height={500}
             />
           </div>
 

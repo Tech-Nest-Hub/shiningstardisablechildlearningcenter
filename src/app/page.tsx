@@ -1,3 +1,4 @@
+import AboutSection from "@/components/landingpage/about-section";
 import Footer from "@/components/landingpage/footer";
 import GallerySection from "@/components/landingpage/gallery-section";
 import Header from "@/components/landingpage/header";
@@ -12,6 +13,7 @@ export default function Home() {
    <main className="min-h-screen bg-background">
       <Header />
        <Hero />
+       <AboutSection/>
       <HighlightsSection />
       <NewsSection />
       <GallerySection />
