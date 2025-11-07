@@ -5,11 +5,11 @@ import Header from "@/components/landingpage/header"
 import { useState } from "react"
 
 export default function GalleryPage() {
-  const allGalleryItems = Array.from({ length: 24 }, (_, i) => ({
+  const allGalleryItems = Array.from({ length: 11 }, (_, i) => ({
     id: i + 1,
     type: "image",
     title: `Gallery Item ${i + 1}`,
-    image: `/placeholder.svg?height=300&width=400&query=children learning activity ${i + 1}`,
+    image: `/photo_gallery/${i + 1}.jpg`,
   }))
 
   const [displayedCount, setDisplayedCount] = useState(6)

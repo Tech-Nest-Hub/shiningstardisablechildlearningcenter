@@ -1,11 +1,13 @@
+import Image from "next/image"
+
 export default function GallerySection() {
   const images = [
-    { id: 1, title: "Classroom Learning", query: "inclusive classroom diverse children learning" },
-    { id: 2, title: "Therapy Sessions", query: "occupational therapy session" },
-    { id: 3, title: "Creative Activities", query: "children art craft activity" },
-    { id: 4, title: "Outdoor Play", query: "children playing outdoors together" },
-    { id: 5, title: "Group Activities", query: "children group activity teamwork" },
-    { id: 6, title: "Campus Facilities", query: "school building accessible facilities" },
+    { id: 1, title: "Classroom Learning", query: "photo_gallery/1.jpg" },
+    { id: 2, title: "Therapy Sessions", query: "photo_gallery/2.jpg" },
+    { id: 3, title: "Creative Activities", query: "photo_gallery/3.jpg" },
+    { id: 4, title: "Outdoor Play", query: "photo_gallery/4.jpg" },
+    { id: 5, title: "Group Activities", query: "photo_gallery/5.jpg" },
+    { id: 6, title: "Campus Facilities", query: "photo_gallery/6.jpg" },
   ]
 
   return (
@@ -21,9 +23,11 @@ export default function GallerySection() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {images.map((image) => (
             <div key={image.id} className="group relative overflow-hidden rounded-lg h-64 bg-muted cursor-pointer">
-              <img
-                src={`/.jpg?height=400&width=400&query=${image.query}`}
+              <Image
+                src={`/${image.query}`}
                 alt={image.title}
+                width={500}
+                height={500}
                 className="w-full h-full object-cover group-hover:scale-110 transition duration-300"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4">
