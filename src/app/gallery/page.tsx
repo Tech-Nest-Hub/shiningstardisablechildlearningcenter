@@ -1,18 +1,25 @@
+"use client"
+
 import Footer from "@/components/landingpage/footer"
 import Header from "@/components/landingpage/header"
-
-export const metadata = {
-  title: "Gallery | Shining Star Disable Child Learning Center",
-  description: "View photos and videos from Shining Star learning center events and activities.",
-}
+import { useState } from "react"
 
 export default function GalleryPage() {
-  const galleryItems = Array.from({ length: 12 }, (_, i) => ({
+  const allGalleryItems = Array.from({ length: 24 }, (_, i) => ({
     id: i + 1,
     type: "image",
     title: `Gallery Item ${i + 1}`,
     image: `/placeholder.svg?height=300&width=400&query=children learning activity ${i + 1}`,
   }))
+
+  const [displayedCount, setDisplayedCount] = useState(6)
+
+  const displayedItems = allGalleryItems.slice(0, displayedCount)
+  const hasMore = displayedCount < allGalleryItems.length
+
+  const handleViewMore = () => {
+    setDisplayedCount((prev) => Math.min(prev + 6, allGalleryItems.length))
+  }
 
   return (
     <main className="min-h-screen bg-background">
@@ -30,7 +37,7 @@ export default function GalleryPage() {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-6">
-            {galleryItems.map((item) => (
+            {displayedItems.map((item) => (
               <div
                 key={item.id}
                 className="group relative overflow-hidden rounded-xl shadow-md hover:shadow-xl transition cursor-pointer"
@@ -51,6 +58,17 @@ export default function GalleryPage() {
               </div>
             ))}
           </div>
+
+          {hasMore && (
+            <div className="flex justify-center mt-12">
+              <button
+                onClick={handleViewMore}
+                className="bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-lg font-semibold transition duration-300"
+              >
+                View More
+              </button>
+            </div>
+          )}
         </div>
       </section>
 
