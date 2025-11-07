@@ -48,11 +48,11 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg mb-1 text-foreground">Phone</h3>
-                    <p className="text-foreground/80">
-                      +977-1-XXXXXXX
+                    <a href="tel:+977-98498403005" className="text-foreground/80">
+                      +977-98-4984030405
                       <br />
                       +977-98XXXXXXX
-                    </p>
+                    </a>
                   </div>
                 </div>
 

@@ -1,5 +1,6 @@
 import Footer from "@/components/landingpage/footer"
 import Header from "@/components/landingpage/header"
+import Image from "next/image"
 
 
 export const metadata = {
@@ -37,7 +38,12 @@ export default function AboutPage() {
               </p>
             </div>
             <div className="bg-linear-to-br from-orange-100 to-orange-50 rounded-xl p-8 min-h-64 flex items-center justify-center">
-              <img src="/inclusive-education-children-learning.jpg" alt="Our mission" className="w-full rounded-lg" />
+              <Image 
+              src="/photo_gallery/8.jpg" 
+              alt="Our mission" 
+              className="w-full rounded-lg"
+              width={500}
+              height={500} />
             </div>
           </div>
 
