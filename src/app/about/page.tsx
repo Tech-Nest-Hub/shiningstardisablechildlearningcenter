@@ -49,7 +49,7 @@ export default function AboutPage() {
 
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div className="bg-linear-to-br from-orange-100 to-orange-50 rounded-xl p-8 min-h-64 flex items-center justify-center order-last md:order-first">
-              <img src="/vision-bright-future-education.jpg" alt="Our vision" className="w-full rounded-lg" />
+              <img src="/photo_gallery/9.jpg" alt="Our vision" className="w-full rounded-lg" />
             </div>
             <div>
               <h2 className="text-3xl font-serif font-bold mb-4 text-primary">Our Vision</h2>

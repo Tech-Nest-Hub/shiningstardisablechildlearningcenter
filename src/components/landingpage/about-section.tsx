@@ -12,6 +12,7 @@ export default function AboutSection() {
               alt="Classroom learning environment"
               width={500}
               height={500}
+              className="object-cover rounded-2xl hover:scale-105 hover:cursor-pointer transition-transform duration-500"
             />
           </div>
 

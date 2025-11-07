@@ -15,7 +15,7 @@ export default function UpdatesPage() {
       category: "Program",
       excerpt:
         "We are excited to announce our comprehensive summer learning programs designed to keep students engaged and progressing.",
-      image: "/summer-learning-program.jpg",
+      image: "/photo_gallery/1.jpg",
     },
     {
       title: "Parent Workshop: Supporting Your Child's Learning",
@@ -23,7 +23,7 @@ export default function UpdatesPage() {
       category: "Workshop",
       excerpt:
         "Join us for an interactive workshop on effective strategies to support your child's educational journey at home.",
-      image: "/parent-workshop-education.jpg",
+      image: "/photo_gallery/2.jpg",
     },
     {
       title: "Annual Sports Day Success",
@@ -31,7 +31,7 @@ export default function UpdatesPage() {
       category: "Event",
       excerpt:
         "Our students showcased incredible talent and spirit at the annual sports day celebration. Thank you to all participants!",
-      image: "/sports-day-children-celebration.jpg",
+      image: "/photo_gallery/6.jpg",
     },
     {
       title: "New State-of-the-Art Therapy Center Opening",
@@ -39,7 +39,7 @@ export default function UpdatesPage() {
       category: "Facility",
       excerpt:
         "We're thrilled to announce the opening of our new therapy center with modern equipment and enhanced facilities.",
-      image: "/therapy-center-facility.jpg",
+      image: "/photo_gallery/3.jpg",
     },
     {
       title: "Student Success Story: From Struggles to Shine",
@@ -47,7 +47,7 @@ export default function UpdatesPage() {
       category: "Success Story",
       excerpt:
         "Read the inspiring journey of how Shining Star helped one student overcome challenges and achieve academic excellence.",
-      image: "/student-success-achievement.jpg",
+      image: "/photo_gallery/4.jpg",
     },
     {
       title: "Staff Training: Latest in Special Education",
@@ -55,7 +55,7 @@ export default function UpdatesPage() {
       category: "Training",
       excerpt:
         "Our team completed comprehensive training on the latest approaches and best practices in special education.",
-      image: "/teacher-training-education.jpg",
+      image: "/photo_gallery/5.jpg",
     },
   ]
 

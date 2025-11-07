@@ -22,12 +22,17 @@ export default function Hero() {
             believe in unlocking every child's potential.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="px-8 py-3 bg-primary text-white rounded-lg font-semibold hover:opacity-90 transition shadow-lg">
+            <a href="/about">
+            <button 
+            className="px-8 py-3 bg-primary text-white rounded-lg font-semibold hover:opacity-90 transition shadow-lg">
               Learn More
             </button>
+              </a>
+              <a href="/contact">
             <button className="px-8 py-3 bg-white text-primary rounded-lg font-semibold hover:opacity-90 transition shadow-lg">
               Enroll Now
             </button>
+              </a>
           </div>
         </div>
       </div>

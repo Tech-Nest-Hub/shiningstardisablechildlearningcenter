@@ -1,4 +1,6 @@
+'use client'
 import Image from "next/image"
+import { redirect } from "next/navigation"
 
 export default function GallerySection() {
   const images = [
@@ -37,6 +39,14 @@ export default function GallerySection() {
           ))}
         </div>
       </div>
+       <div className="flex justify-center mt-8">
+              <button
+              onClick={()=> redirect("/gallery")}
+                className="bg-primary hover:cursor-pointer hover:bg-primary/90 text-white px-8 py-3 rounded-lg font-semibold transition duration-300"
+              >
+                View More
+              </button>
+            </div>
     </section>
   )
 }
