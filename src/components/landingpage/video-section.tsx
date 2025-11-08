@@ -1,9 +1,9 @@
 export default function VideoSection() {
   const videos = [
+    { id: 4, title: "YouTube Feature Video", platform: "youtube", url: "https://www.youtube.com/watch?v=XWvyK2hkvMI" },
     { id: 1, title: "Welcome to Shining Star", platform: "facebook", url: "https://www.facebook.com/watch/?v=585593169980929&rdid=7XPo1ki4UTqeGCxP" },
     { id: 2, title: "Our Teaching Approach", platform: "facebook", url: "https://www.facebook.com/watch/?v=1185861098611283&rdid=sNN33sBPR5NB0Kol" },
     { id: 3, title: "Student Success Stories", platform: "facebook", url: "https://www.facebook.com/watch/?v=6873287509398312&rdid=fnzwhF8QXdnFrsDh" },
-    { id: 4, title: "YouTube Feature Video", platform: "youtube", url: "https://www.youtube.com/watch?v=XWvyK2hkvMI" },
   ]
 
   function getEmbedUrl(video:String | any) {
@@ -27,7 +27,7 @@ export default function VideoSection() {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {videos.map((video) => (
+          {videos.length > 3 && videos.slice(0, 3).map((video) => (
             <div key={video.id} className="group relative">
               <div className="relative overflow-hidden rounded-xl bg-muted aspect-video">
                 <iframe
