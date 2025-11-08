@@ -1,9 +1,20 @@
 export default function VideoSection() {
   const videos = [
-    { id: 1, title: "Welcome to Shining Star", thumbnail: "inclusive learning center welcome" },
-    { id: 2, title: "Our Teaching Approach", thumbnail: "special education teaching methods" },
-    { id: 3, title: "Student Success Stories", thumbnail: "student testimonials achievements" },
+    { id: 1, title: "Welcome to Shining Star", platform: "facebook", url: "https://www.facebook.com/watch/?v=585593169980929&rdid=7XPo1ki4UTqeGCxP" },
+    { id: 2, title: "Our Teaching Approach", platform: "facebook", url: "https://www.facebook.com/watch/?v=1185861098611283&rdid=sNN33sBPR5NB0Kol" },
+    { id: 3, title: "Student Success Stories", platform: "facebook", url: "https://www.facebook.com/watch/?v=6873287509398312&rdid=fnzwhF8QXdnFrsDh" },
+    { id: 4, title: "YouTube Feature Video", platform: "youtube", url: "https://www.youtube.com/watch?v=XWvyK2hkvMI" },
   ]
+
+  function getEmbedUrl(video:String | any) {
+    if (video.platform === "youtube") {
+      const videoId = new URL(video.url).searchParams.get("v")
+      return `https://www.youtube.com/embed/${videoId}`
+    } else if (video.platform === "facebook") {
+      return `https://www.facebook.com/plugins/video.php?href=${encodeURIComponent(video.url)}&show_text=false&width=500`
+    }
+    return video.url
+  }
 
   return (
     <section id="videos" className="py-16 md:py-24 bg-background">
@@ -15,22 +26,20 @@ export default function VideoSection() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {videos.map((video) => (
             <div key={video.id} className="group relative">
-              <div className="relative overflow-hidden rounded-lg h-48 bg-muted">
-                <img
-                  src={`/.jpg?height=300&width=500&query=${video.thumbnail}`}
-                  alt={video.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition duration-300"
-                />
-                <button className="absolute inset-0 w-full h-full flex items-center justify-center bg-black/30 group-hover:bg-black/50 transition">
-                  <svg className="w-16 h-16 text-white" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M8 5v14l11-7z" />
-                  </svg>
-                </button>
+              <div className="relative overflow-hidden rounded-xl bg-muted aspect-video">
+                <iframe
+                  src={getEmbedUrl(video)}
+                  title={video.title}
+                  allowFullScreen
+                  className="w-full h-full border-0"
+                ></iframe>
               </div>
-              <h3 className="mt-3 font-semibold text-foreground group-hover:text-primary transition">{video.title}</h3>
+              <h3 className="mt-3 font-semibold text-foreground group-hover:text-primary transition text-center">
+                {video.title}
+              </h3>
             </div>
           ))}
         </div>
